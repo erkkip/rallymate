@@ -23,7 +23,7 @@
                            class="form-control text-light py-0 px-0 border-0"
                            style="background: none"
                            type="text"
-                           placeholder="Set time"
+                           placeholder="__:__.___"
                            x-mask="99:99.999">
                 </div>
                 @endif
