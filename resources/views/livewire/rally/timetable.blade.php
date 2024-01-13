@@ -17,12 +17,12 @@
                     {{ $result['time'] }}
                 @else
                 <div class="input-group">
-                    <input wire:keydown.enter="setTime({{ $result['driverId'] }})"
-                           wire:change="setTime({{ $result['driverId'] }})"
+                    <input wire:change="setTime({{ $result['driverId'] }})"
                            wire:model="results.{{ $result['driverId'] }}.time"
                            class="form-control text-light py-0 px-0 border-0"
                            style="background: none"
                            type="text"
+                           inputmode="numeric"
                            placeholder="__:__.___"
                            x-mask="99:99.999">
                 </div>
